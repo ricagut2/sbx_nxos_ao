@@ -79,11 +79,8 @@ def main():
                          look_for_keys=False, allow_agent=False) as m:
 
         # Add the loopback interface
-        print("\nNow adding IP address {} to intf {} on device {}...\n".format(
-                        LOOPBACK_IP['ip'],
-                        LOOPBACK_IP['name'],
-                        DEVICE)
-                        )
+        print(f"\nNow adding IP address {LOOPBACK_IP['ip']} to intf {LOOPBACK_IP['name']} on device {DEVICE}...\n")
+                        
 
         new_ip = add_ip_interface.format(
                 LOOPBACK_IP['loopback'],
